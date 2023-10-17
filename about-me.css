@@ -1,0 +1,82 @@
+.about-me-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(242, 242, 242);
+    padding: 30px 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgb(194, 194, 194);
+    transition: all 1s;
+}
+
+.about-me-wrapper:hover {
+    box-shadow: 20px 10px 10px var(--primary), -20px -10px 10px var(--accent);
+}
+
+.headshot-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headshot {
+    width: 80%;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.headshot:hover {
+    box-shadow: 0 0 55px var(--accent)
+}
+
+.about-me {
+    font-family: arial;
+    position: relative;
+}
+
+.about-me-title {
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--primary);
+    transition: all .5s;
+}
+
+.about-me-subtitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--secondary);
+    transition: all .5s;
+}
+
+.about-me-title:hover, .about-me-subtitle:hover {
+    color: var(--accent);
+    cursor: default;
+}
+.about-me-text {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.read-more-button {
+    text-align: center;
+    bottom: 10px;
+    font-size: 32px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    flex: 1;
+    height: 50px;
+    width: 200px;
+    transition: all .25s;
+    cursor: pointer;
+}
+
+.read-more-button:hover {
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+    font-weight: bold;
+}

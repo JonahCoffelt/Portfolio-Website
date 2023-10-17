@@ -1,0 +1,116 @@
+.header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    padding: 0 20px;
+    background-color: rgb(242, 242, 242);
+    margin: 10px 20%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(194, 194, 194);
+    transition: all .25s;
+    z-index: 120;
+}
+
+.header-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    height: 15vh;
+    box-shadow: 0 0 8px rgb(194, 194, 194);
+    z-index: 120;
+}
+
+.header-space {
+    flex: 1;
+}
+
+.header:hover{
+    box-shadow: 0 0 15px rgb(168, 168, 168);
+    z-index: 120;
+}
+
+.logo-wrapper{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.logo {
+    font-family: Cedarville Cursive;
+    color: white;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 5px;
+    height: 60px;
+    width: 60px;
+    background-color: var(--secondary);
+    text-align: center;
+    font-size: 28px;
+    transition: all .6s;
+}
+
+.logo:hover {
+    height: 70px;
+    width: 70px;
+    margin-left: 0px;
+    font-size: 32px;
+    box-shadow: 0 0 25px var(--accent)
+}
+
+.navigation-wrapper {
+    display: flex;
+    flex: 4;
+    justify-content: end;
+    align-items: center;}
+
+.page-selected {
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: var(--primary);
+    flex: 1;
+    height: 40px;
+    transition: all .25s;
+    cursor: pointer;
+}
+
+.page-titles {
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: var(--secondary);
+    flex: 1;
+    height: 40px;
+    transition: all .25s;
+    cursor: pointer;
+}
+
+.page-titles:hover {
+    flex: 1.2;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-weight: bold;
+    background-color: transparent;
+    z-index: 111;
+}
+
+.page-selected:hover {
+    flex: 1.2;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-weight: bold;
+    background-color: transparent;
+    z-index: 111;
+}
